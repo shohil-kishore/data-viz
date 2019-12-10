@@ -1,0 +1,19 @@
+{
+  "name": "data-viz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shohil-kishore/data-viz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shohil-kishore/data-viz/issues"
+  },
+  "homepage": "https://github.com/shohil-kishore/data-viz#readme"
+}
