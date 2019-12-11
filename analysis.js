@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-var data = fs.readFileSync("./count-without-auckland.json");
+var data = fs.readFileSync("./count-with-auckland.json");
 var json = JSON.parse(data);
 var len = Object.keys(json.results).length;
 

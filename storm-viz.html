@@ -16,20 +16,34 @@
 
   <body>
       <div class="container" style="padding: 5%;">
-        <div id="chart"></div>
-        <div></div>
+        <h3>Total Daily Tweets</h3>
+        <div id="chartWithoutAuck"></div>
+        <h3>Total Daily Tweets (with #Auckland)</h3>
+        <div id="chartWithAuck"></div>
       </div>
     </div>
 
-    <script>      
-      totalTweetsWithAuck.unshift("Total Daily Tweets");
+    <script>
+      totalTweetsWithoutAuck.unshift("Total Tweets without #Auckland");
+      totalTweetsWithAuck.unshift("Total Tweets with #Auckland");
 
       var chart = c3.generate({
         data: {
           columns: [
+          totalTweetsWithAuck,
+          totalTweetsWithoutAuck
+          ]
+        },
+        bindto: '#chartWithoutAuck'
+      });
+
+      var chart2 = c3.generate({
+        data: {
+          columns: [
             totalTweetsWithAuck
           ]
-        }
+        },
+        bindto: '#chartWithAuck'
       });
     </script>
 
